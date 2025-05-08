@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" prefWidth="400" prefHeight="300"
+            style="-fx-background-color: linear-gradient(to bottom right, #7F7FD5, #86A8E7, #91EAE4);">
+
+    <VBox spacing="10.0" alignment="CENTER" layoutX="50" layoutY="60" prefWidth="300">
+        <Label text="Login" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: black;" />
+
+        <Label text="Enter your username and password for this app"
+               style="-fx-text-fill: black; -fx-font-size: 12px;" />
+
+        <TextField promptText="Enter username"
+                   prefWidth="250" style="-fx-background-radius: 6; -fx-padding: 10;" />
+
+        <PasswordField promptText="Enter password"
+                       prefWidth="250" style="-fx-background-radius: 6; -fx-padding: 10;" />
+
+        <Button text="Login" prefWidth="250"
+                style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 6;" />
+    </VBox>
+
+</AnchorPane>
