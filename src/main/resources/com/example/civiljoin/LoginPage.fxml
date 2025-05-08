@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Import necessary JavaFX and Java classes -->
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Dito mga colors, gradient, window size -->
+<AnchorPane xmlns:fx="http://javafx.com/fxml" prefWidth="800" prefHeight="600"
+            style="-fx-background-color: radial-gradient(center 50% 50%, radius 100%, #888888, #444444, #222222);">
+
+    <!-- lahat ng elements eto. BTW Import nyo to sa scene builder LoginPage.fxml para ma edit, gamitan nyo ng css pala... nakakamental breakdown wag nyo na ako gayahin bwhahahah  -->
+    <VBox spacing="20.0" alignment="CENTER" layoutX="100" layoutY="60" prefWidth="600">
+        <!-- login title (papalitan pa ata ng logo or i ooverlay nalang undecided pa!) -->
+        <Label text="Log In" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: black;" />
+
+        <!-- Subtitle/instruction label -->
+        <Label text="Enter your username and password to sign in for this app"
+               style="-fx-text-fill: black; -fx-font-size: 16px;" wrapText="true" maxWidth="600" alignment="CENTER"/>
+
+        <!-- Login form container -->
+        <VBox spacing="8.0" alignment="CENTER_LEFT" prefWidth="300">
+            <!-- Username field -->
+            <Label text="Username:" style="-fx-font-size: 16px; -fx-text-fill: black;" />
+            <TextField promptText="Username:" prefWidth="300" style="-fx-background-radius: 6; -fx-padding: 10; -fx-font-size: 16px;" />
+            <!-- Password field -->
+            <Label text="Password:" style="-fx-font-size: 16px; -fx-text-fill: black;" />
+            <PasswordField promptText="Password:" prefWidth="300" style="-fx-background-radius: 6; -fx-padding: 10; -fx-font-size: 16px;" />
+        </VBox>
+
+        <!-- Login button -->
+        <Button text="Login" prefWidth="300"
+                style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 6; -fx-font-size: 18px;" />
+
+        <!-- line -->
+        <Separator prefWidth="400" style="-fx-background-color: #cccccc;" />
+        
+        <!-- UUID key section -->
+        <VBox spacing="10.0" alignment="CENTER" prefWidth="300">
+            <Label text="Don't Have a Key?" style="-fx-font-size: 16px; -fx-text-fill: black;" />
+            <!-- UUID input field -->
+            <TextField promptText="16-digit UUID key" prefWidth="300" style="-fx-background-radius: 6; -fx-padding: 10; -fx-font-size: 16px;" />
+            <!-- Admin contact button -->
+            <Button text="Contact your admin for more info" prefWidth="300"
+                    style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 6; -fx-font-size: 16px;" />
+        </VBox>
+    </VBox>
+
+</AnchorPane>
