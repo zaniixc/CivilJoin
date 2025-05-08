@@ -11,7 +11,7 @@
 <AnchorPane xmlns:fx="http://javafx.com/fxml" prefWidth="800" prefHeight="600"
             style="-fx-background-color: linear-gradient(from 0% 60% to 40% 0%, #474448 0%, #DFDCCE 100%);">
 
-    <!-- lahat ng elements eto. BTW Import nyo to sa scene builder LoginPage.fxml para ma edit, gamitan nyo ng css pala... nakakamental breakdown wag nyo na ako gayahin bwhahahah  -->
+    <!-- lahat ng elements eto. BTW Import nyo to sa scene builder LoginPage.fxml para ma edit, gamitan nyo ng css pala-->
     <VBox spacing="20.0" alignment="CENTER" layoutX="100" layoutY="60" prefWidth="600">
         <!-- login title (papalitan pa ata ng logo or i ooverlay nalang undecided pa!) -->
         <Label text="Log In" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: black;" />
