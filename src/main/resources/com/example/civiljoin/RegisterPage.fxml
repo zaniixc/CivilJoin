@@ -1,14 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
+<!-- Edited using Scene Builder, and use it when making changes!! -->
+<!-- colors, gradient, window size. For colors are 000000FF in hex format (first 6 char, 000000), and FF are alpha (last two char, manipulation of brightness/contrast shade of a color) -->
+<!-- adjusted rounded corners from 10 to 5 (-fx-background-radius: 5;) (-fx-border-radius: 5;) -->
+
+<AnchorPane fx:id="rootPane"
+            xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.example.civiljoin.RegisterController"
-            prefHeight="400.0" prefWidth="600.0">
+            prefHeight="385" prefWidth="450"
+            style="-fx-background-color: linear-gradient(from 0% 30% to 70% 0%, #3f3e40FF 0%, #3f3e407F 100%);
+                   -fx-background-radius: 5;
+                   -fx-border-radius: 5;
+                   -fx-border-color: #3f3e40;
+                   -fx-border-width: 1;
+                   -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);">
+    
+    <!-- Title Bar -->
+    <HBox alignment="CENTER_LEFT" style="-fx-padding: 5;" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+        <Label text="CivilJoin" style="-fx-text-fill: white; -fx-font-size: 12px;" />
+        <Region HBox.hgrow="ALWAYS" />
+        <HBox spacing="5">
+            <Button fx:id="minimizeButton" onAction="#onMinimizeButtonClick" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 12px; -fx-min-width: 30; -fx-min-height: 25;" text="🗕" />
+            <Button fx:id="maximizeButton" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 12px; -fx-min-width: 30; -fx-min-height: 25;" text="🗗" />
+            <Button fx:id="closeButton" onAction="#onCloseButtonClick" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 12px; -fx-min-width: 30; -fx-min-height: 25;" text="🗙" />
+            <padding>
+                <Insets right="5" />
+            </padding>
+        </HBox>
+    </HBox>
 
+    <!-- Title -->
+    <Label text="Register" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: white;" AnchorPane.topAnchor="30" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" alignment="CENTER" />
+    
+    <!-- Subtitle -->
+    <Label text="Register for an account." style="-fx-text-fill: white; -fx-font-size: 14px;" wrapText="true" alignment="CENTER" AnchorPane.topAnchor="60" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" />
+
+    <!-- Fill up Forms -->
+    <Label text="Username:" style="-fx-text-fill: white; -fx-font-size: 14px;" AnchorPane.topAnchor="90" AnchorPane.leftAnchor="75" />
+    <TextField fx:id="usernameField" promptText="Username:" style="-fx-background-radius: 6; -fx-padding: 8; -fx-font-size: 14px;" AnchorPane.topAnchor="110" AnchorPane.leftAnchor="75" prefWidth="300" />
+    
+    <Label text="Password:" style="-fx-text-fill: white; -fx-font-size: 14px;" AnchorPane.topAnchor="150" AnchorPane.leftAnchor="75" />
+    <PasswordField fx:id="passwordField" promptText="Password:" style="-fx-background-radius: 6; -fx-padding: 8; -fx-font-size: 14px;" AnchorPane.topAnchor="170" AnchorPane.leftAnchor="75" prefWidth="300" />
+    
+    <Label text="Confirm Password:" style="-fx-text-fill: white; -fx-font-size: 14px;" AnchorPane.topAnchor="210" AnchorPane.leftAnchor="75" />
+    <PasswordField fx:id="confirmPasswordField" promptText="Confirm Password:" style="-fx-background-radius: 6; -fx-padding: 8; -fx-font-size: 14px;" AnchorPane.topAnchor="230" AnchorPane.leftAnchor="75" prefWidth="300" />
+    
+    <Label text="16-Digit Key:" style="-fx-text-fill: white; -fx-font-size: 14px;" AnchorPane.topAnchor="270" AnchorPane.leftAnchor="75" />
+    <TextField fx:id="keyField" promptText="16-Digit Key:" style="-fx-background-radius: 6; -fx-padding: 8; -fx-font-size: 14px;" AnchorPane.topAnchor="290" AnchorPane.leftAnchor="75" prefWidth="300" />
+
+    <!-- Sign Up Button -->
+    <Button fx:id="signUpButton" text="Sign up" AnchorPane.topAnchor="330" AnchorPane.leftAnchor="150" prefWidth="150"
+            onAction="#onSignUpButtonClick"
+            style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 6; -fx-font-size: 14px;" />
+
+    <!-- Already have account -->
+    <Label text="Already have an account?" 
+           onMouseClicked="#onAlreadyHaveAccountClick"
+           style="-fx-font-size: 12px; -fx-text-fill: white; -fx-underline: true; -fx-cursor: hand;" AnchorPane.topAnchor="360" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" alignment="CENTER" />
 </AnchorPane>
