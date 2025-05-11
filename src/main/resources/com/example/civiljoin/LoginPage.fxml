@@ -9,8 +9,8 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
 
-<!-- Edited using Scene Builder, and use it when making changes!! -->
-<!-- colors, gradient, window size. For colors are 000000FF in hex format (first 6 char, 000000), and FF are alpha (last two char, manipulation of brightness/contrast shade of a color) -->
+<!-- Edited using Scene Builder and use it when making changes!! -->
+<!-- Colors, gradient, window size. For colors are 000000FF in hex format (first 6 char, 000000), and FF is alpha (last two char, manipulation of the brightness/contrast shade in a color) -->
 <!-- adjusted rounded corners from 10 to 5 (-fx-background-radius: 5;) (-fx-border-radius: 5;) -->
 
 <AnchorPane fx:id="rootPane"
@@ -52,13 +52,13 @@
     <PasswordField fx:id="passwordField" promptText="Password:" style="-fx-background-radius: 6; -fx-padding: 8; -fx-font-size: 14px;" AnchorPane.topAnchor="190" AnchorPane.leftAnchor="75" prefWidth="300" />
 
     <!-- Login Button -->
-    <Button text="Login" AnchorPane.topAnchor="242.5" AnchorPane.leftAnchor="150" prefWidth="150" style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 6; -fx-font-size: 14px;" />
+    <Button fx:id="loginButton" text="loginButton" AnchorPane.topAnchor="242.5" AnchorPane.leftAnchor="150" prefWidth="150" style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 6; -fx-font-size: 14px;" />
 
     <!-- UUID Key Input -->
-    <TextField promptText="16-Digit UUID Key:" style="-fx-background-radius: 6; -fx-padding: 8; -fx-font-size: 14px;" AnchorPane.topAnchor="290" AnchorPane.leftAnchor="75" prefWidth="300" />
-    
+    <TextField fx:id="keyInputField" promptText="16-Digit UUID Key:" style="-fx-background-radius: 6; -fx-padding: 8; -fx-font-size: 14px;" AnchorPane.topAnchor="290" AnchorPane.leftAnchor="75" prefWidth="300" />
+
     <!-- Button For Contact -->
-    <Button text="Contact your admin for more info" AnchorPane.topAnchor="330" AnchorPane.leftAnchor="112.5" prefWidth="226.5" style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 6; -fx-font-size: 14px;" />
+    <Button fx:id="contactSupportButton" text="Contact your admin for more info" AnchorPane.topAnchor="330" AnchorPane.leftAnchor="112.5" prefWidth="226.5" style="-fx-background-color: black; -fx-text-fill: white; -fx-background-radius: 6; -fx-font-size: 14px;" />
 
     <!-- Create an account -->
     <Label text="Create an account." onMouseClicked="#onCreateAccountClick" style="-fx-font-size: 12px; -fx-text-fill: white; -fx-underline: true; -fx-cursor: hand;" AnchorPane.topAnchor="360" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" alignment="CENTER" />

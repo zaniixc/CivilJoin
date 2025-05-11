@@ -4,10 +4,9 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle; // for changing window background like adding a rounded corners https://docs.oracle.com/javase/8/javafx/api/javafx/stage/StageStyle.html
-import javafx.scene.paint.Color; // import colors
-
-import java.io.IOException;
+import javafx.stage.StageStyle; // For changing the window background like adding rounded corners https://docs.oracle.com/javase/8/javafx/api/javafx/stage/StageStyle.html
+import javafx.scene.paint.Color; // Import colors
+import java.io.IOException; // Import for error handling and logging used at 'onCreateAccountClick', 'onAlreadyHaveAccountClick'
 
 public class HelloApplication extends Application {    
     @Override

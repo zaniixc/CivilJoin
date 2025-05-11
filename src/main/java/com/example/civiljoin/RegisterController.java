@@ -28,24 +28,30 @@ public class RegisterController {
     private AnchorPane rootPane;
         
     /*  This is the field for the username. Make sure to import the necessary JavaFX classes use "onMouseClicked"
-        https://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/MouseEvent.html */
+        https://docs.oracle.com/javase/8/javafx/api/javafx/scene/input/MouseEvent.html
+        This is unused for now. Use this for setting up the Username Logic */
     @FXML
+    @SuppressWarnings("unused")
     private TextField usernameField;
 
-    // This is the field for the password
+    // This is the field for the password. This is unused for now. Use this to for setting up the Password Logic
     @FXML
+    @SuppressWarnings("unused")
     private PasswordField passwordField;
 
-    // This is the field for the confirm password
+    // This is the field for the password confirmation This is unused for now. Use this for setting up the Confirm Password Logic
     @FXML
+    @SuppressWarnings("unused")
     private PasswordField confirmPasswordField;
 
-    // This is the field for the key
+    // This is the field for the key This is unused for now. Use this for setting up the 16-Digit UUID Key Logic
     @FXML
+    @SuppressWarnings("unused")
     private TextField keyField;
 
-    // This is the button for creating an account
+    // This is the button for creating an account. Use this to Sign up Button Logic
     @FXML
+    @SuppressWarnings("unused")
     private Button signUpButton;
 
     // This is the button for minimizing the window
@@ -62,16 +68,15 @@ public class RegisterController {
     private Button closeButton;
 
     /*  This is responsible for the window designs https://docs.oracle.com/javase/8/javafx/api/javafx/stage/Stage.html
-        Lahat ng may 'stage', 'scene' mga variables for windwow design */
+        Lahat ng may 'stage', 'scene' mga variables for window design */
     private Stage stage;
 
-    // This method is responsible for the dragging of the window. offset for the x and y coordinates
+    // this method is responsible for the dragging of the window. offset for the x and y coordinates
     private double xOffset = 0;
     private double yOffset = 0;
 
-    // This is the offset for the window specifically for the x axis of the Three buttons the minimize, maximize and close buttons
+    // This is the offset for the window specifically for the x-axis for minimize, maximize and close buttons
     public void setStage(Stage stage) {
-        this.stage = stage;
 
         // Add hover effects for minimizeButton
         minimizeButton.setOnMouseEntered(event -> minimizeButton.setStyle("-fx-background-color: #444444; -fx-text-fill: #00ff00;"));
@@ -96,28 +101,9 @@ public class RegisterController {
             stage.setX(event.getScreenX() - xOffset);
             stage.setY(event.getScreenY() - yOffset);
         });
+        this.stage = stage;
     }
 
-    // Handle sign-up logic here. ChatGPT gumawa neto
-    @FXML
-    public void onSignUpButtonClick() {
-        String username = usernameField.getText();
-        String password = passwordField.getText();
-        String confirmPassword = confirmPasswordField.getText();
-        String key = keyField.getText();
-
-        if (username.isEmpty() || password.isEmpty() || confirmPassword.isEmpty() || key.isEmpty()) {
-            System.out.println("All fields are required.");
-            return;
-        }
-
-        if (!password.equals(confirmPassword)) {
-            System.out.println("Passwords do not match.");
-            return;
-        }
-
-        System.out.println("Registration successful for user: " + username);
-    }
 
     // This method will return to the LoginPage.fxml file and set it as the current scene. Salamat kay ChatGPT
     @FXML
@@ -130,7 +116,7 @@ public class RegisterController {
             // Get the current stage
             Stage stage = (Stage) signUpButton.getScene().getWindow();
             
-            // Set scene background to transparent
+            // Set a 'scene background' to transparent
             scene.setFill(null);
             
             // Pass the stage to the LoginController

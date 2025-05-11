@@ -20,13 +20,30 @@ public class LoginController {
     @FXML
     private AnchorPane rootPane;
 
-    // This is the field for the username
+    // This is the field for the username. This is unused for now. Use this to for setting up the Username Logic
     @FXML
+    @SuppressWarnings("unused")
     private TextField usernameField;
 
-    // This is the field for the password
+    // This is the field for the password. This is unused for now. Use this to for setting up the Password Logic
     @FXML
+    @SuppressWarnings("unused")
     private PasswordField passwordField;
+
+    // This is the field for the Login Button. This is unused for now. Use this to for setting up the Login Button Logic
+    @FXML
+    @SuppressWarnings("unused")
+    private Button loginButton;
+
+    // This is the field for the 16-Digit UUID Input. This is unused for now. Use this to for setting up the 16-Digit UUID Input Logic
+    @FXML
+    @SuppressWarnings("unused")
+    private TextField keyInputField;
+
+    // This is the field for the Contact your admin for more info Button. This is unused for now. Use this to for setting up the Contact your admin for more info Button Logic
+    @FXML
+    @SuppressWarnings("unused")
+    private Button contactSupportButton;
 
     // This is the button for minimizing the window
     @FXML
@@ -42,15 +59,14 @@ public class LoginController {
     private Button closeButton;
 
     /*  This is responsible for the window designs https://docs.oracle.com/javase/8/javafx/api/javafx/stage/Stage.html
-        Lahat ng may 'stage', 'scene' mga variables for windwow design */
+        Lahat ng may 'stage', 'scene' mga variables for window design */
     private Stage stage;
 
-    // This method is responsible for the dragging of the window. offset for the x and y coordinates
+    // this method is responsible for the dragging of the window. offset for the x and y coordinates
     private double xOffset = 0;
     private double yOffset = 0;
 
     public void setStage(Stage stage) {
-        this.stage = stage;
 
         // Add hover effects for minimizeButton
         minimizeButton.setOnMouseEntered(event -> minimizeButton.setStyle("-fx-background-color: #444444; -fx-text-fill: #00ff00;"));
@@ -66,6 +82,7 @@ public class LoginController {
 
         // Initialize window dragging functionality
         enableWindowDragging();
+        this.stage = stage;
     }
 
     private void enableWindowDragging() {
@@ -94,7 +111,7 @@ public class LoginController {
             // Get the current stage
             Stage stage = (Stage) rootPane.getScene().getWindow();
             
-            // Set scene background to transparent
+            // Set the 'scene background' to transparent
             scene.setFill(null);
             
             // Pass the stage to the RegisterController
