@@ -35,7 +35,9 @@
         <TextField HBox.hgrow="ALWAYS" prefHeight="30" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0, 0, 0); -fx-background-color: linear-gradient(from 0% 100% to 100% 0%, #2C2F33FF 0%, #2C2F33FF 100%); -fx-text-fill: #FFFFFF; -fx-background-radius: 6; -fx-padding: 4 8; -fx-font-size: 12px;" />
     </HBox>
 
-    <Button text="Register" prefWidth="200" prefHeight="30" style="-fx-background-color: #7289DA; -fx-text-fill: #FFFFFF; -fx-background-radius: 6; -fx-font-size: 14px; -fx-cursor: hand;" AnchorPane.topAnchor="270" AnchorPane.leftAnchor="250" AnchorPane.rightAnchor="250" />
+    <HBox alignment="CENTER" AnchorPane.topAnchor="270" AnchorPane.leftAnchor="150" AnchorPane.rightAnchor="150">
+        <Button text="Register" prefWidth="260" prefHeight="30" style="-fx-effect: dropshadow(gaussian, rgba(255,255,255,0.1), 10, 0, 0, 0); -fx-background-color: #7289DA; -fx-text-fill: #FFFFFF; -fx-background-radius: 6; -fx-font-size: 14px; -fx-font-weight: bold; -fx-cursor: hand;" />
+    </HBox>
 
     <Label text="Already have an account?" style="-fx-font-size: 12px; -fx-text-fill: #4A79A1; -fx-underline: true; -fx-cursor: hand;" AnchorPane.bottomAnchor="13.5" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" alignment="CENTER" />
 </AnchorPane>
