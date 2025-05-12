@@ -10,7 +10,7 @@
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.example.civiljoin.RegisterController"
-            prefHeight="350" prefWidth="800"
+            prefWidth="800" prefHeight="350"
             style="-fx-background-color: linear-gradient(from 0% 100% to 100% 0%, #23272AFF 0%, #23272AFF 100%);">
 
     <Label text="CivilJoin - Register" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: white;" AnchorPane.topAnchor="35" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" alignment="CENTER" />
