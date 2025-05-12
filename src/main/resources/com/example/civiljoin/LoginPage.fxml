@@ -30,7 +30,7 @@
     </HBox>
 
     <HBox alignment="CENTER" AnchorPane.topAnchor="235" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
-        <Label text="Lost your password?" style="-fx-font-size: 12px; -fx-text-fill: #4A79A1; -fx-underline: true; -fx-cursor: hand;" />
+        <Label text="Lost your password?" style="-fx-effect: dropshadow(gaussian, rgba(255,255,255,0.1), 10, 0, 0, 0); -fx-font-size: 12px; -fx-text-fill: #4A79A1; -fx-underline: true; -fx-cursor: hand;" />
     </HBox>
 
     <HBox alignment="CENTER" AnchorPane.topAnchor="265" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
