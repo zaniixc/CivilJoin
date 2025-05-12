@@ -8,10 +8,10 @@
 <?import javafx.scene.layout.HBox?>
 
 <AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.civiljoin.LoginController"
-            prefWidth="800" prefHeight="350"
-            style="-fx-background-color: linear-gradient(from 0% 100% to 100% 0%, #23272AFF 0%, #23272AFF 100%);">
+                         xmlns:fx="http://javafx.com/fxml"
+                         fx:controller="com.example.civiljoin.LoginController"
+                         prefWidth="800" prefHeight="350"
+                         style="-fx-background-color: linear-gradient(from 0% 100% to 100% 0%, #23272AFF 0%, #23272AFF 100%);">
 
     <Label text="CivilJoin - Login" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #FFFFFF; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0, 0, 0);" AnchorPane.topAnchor="35" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" alignment="CENTER" />
 
@@ -42,5 +42,4 @@
     <HBox alignment="CENTER" AnchorPane.topAnchor="265" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
         <Label text="Want to register with a serial key?" style="-fx-effect: dropshadow(gaussian, rgba(255,255,255,0.1), 10, 0, 0, 0); -fx-font-size: 12px; -fx-text-fill: #4A79A1; -fx-underline: true; -fx-cursor: hand;" />
     </HBox>
-
 </AnchorPane>
