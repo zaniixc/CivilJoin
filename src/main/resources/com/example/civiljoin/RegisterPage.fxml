@@ -36,7 +36,7 @@
     </HBox>
 
     <HBox alignment="CENTER" AnchorPane.topAnchor="270" AnchorPane.leftAnchor="150" AnchorPane.rightAnchor="150">
-        <Button text="Register" prefWidth="260" prefHeight="30" style="-fx-effect: dropshadow(gaussian, rgba(255,255,255,0.1), 10, 0, 0, 0); -fx-background-color: #7289DA; -fx-text-fill: #FFFFFF; -fx-background-radius: 6; -fx-font-size: 14px; -fx-font-weight: bold; -fx-cursor: hand;" />
+        <Button text="Register" prefWidth="300" prefHeight="30" style="-fx-effect: dropshadow(gaussian, rgba(255,255,255,0.1), 10, 0, 0, 0); -fx-background-color: #7289DA; -fx-text-fill: #FFFFFF; -fx-background-radius: 6; -fx-font-size: 14px; -fx-font-weight: bold; -fx-cursor: hand;" />
     </HBox>
 
     <HBox alignment="BOTTOM_CENTER" AnchorPane.bottomAnchor="17" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
