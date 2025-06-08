@@ -1,0 +1,149 @@
+🚀 Starting CivilJoin with Enhanced Performance Optimizations...
+==================================================
+📁 Checking compilation status...
+✅ All classes compiled successfully
+🗄️  Checking database schema files...
+✅ Enhanced schema found
+✅ Migration script found
+==================================================
+🎯 Launching CivilJoin Application...
+Features enabled:
+  • Enhanced Database Schema
+  • AsyncTaskService (Multi-threaded operations)
+  • CacheService (Performance caching)
+  • PerformanceMonitor (Real-time metrics)
+  • Virtual Timeline (60fps scrolling)
+  • Fixed CSS styling issues
+==================================================
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil setupDatabase
+INFO: Database exists, connection established
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#noProviders for further details.
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil initializeConnectionPool
+INFO: Connection pool initialized successfully
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil getConnection
+INFO: Database connection obtained from pool
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil initializeActivityLogTable
+INFO: Activity log table initialized successfully
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil closeConnection
+INFO: Database connection returned to pool
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil getConnection
+INFO: Database connection obtained from pool
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil initializeKeyIdTable
+INFO: Key IDs table initialized successfully
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil closeConnection
+INFO: Database connection returned to pool
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil getConnection
+INFO: Database connection obtained from pool
+May 30, 2025 10:02:19 AM gov.civiljoin.service.CommentService initializeCommentTable
+INFO: Comments table initialized successfully
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil closeConnection
+INFO: Database connection returned to pool
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil getConnection
+INFO: Database connection obtained from pool
+May 30, 2025 10:02:19 AM gov.civiljoin.service.SystemActivityService initializeTable
+INFO: System activities table initialized successfully
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil getConnection
+INFO: Database connection obtained from pool
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil closeConnection
+INFO: Database connection returned to pool
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil closeConnection
+INFO: Database connection returned to pool
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil getConnection
+INFO: Database connection obtained from pool
+May 30, 2025 10:02:19 AM gov.civiljoin.service.SecurityService createSecurityEventsTable
+INFO: Security events table initialized successfully
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil closeConnection
+INFO: Database connection returned to pool
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil getConnection
+INFO: Database connection obtained from pool
+May 30, 2025 10:02:19 AM gov.civiljoin.service.SecurityService createUserSessionsTable
+INFO: User sessions table initialized successfully
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil closeConnection
+INFO: Database connection returned to pool
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil getConnection
+INFO: Database connection obtained from pool
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil getConnection
+INFO: Database connection obtained from pool
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil closeConnection
+INFO: Database connection returned to pool
+May 30, 2025 10:02:19 AM gov.civiljoin.service.SecurityService createSystemSettingsTable
+INFO: System settings table initialized successfully
+May 30, 2025 10:02:19 AM gov.civiljoin.util.DatabaseUtil closeConnection
+INFO: Database connection returned to pool
+May 30, 2025 10:02:19 AM gov.civiljoin.CivilJoinApplication init
+INFO: All database services initialized successfully
+May 30, 2025 10:02:19 AM gov.civiljoin.util.PerformanceMonitor <init>
+INFO: PerformanceMonitor initialized
+May 30, 2025 10:02:19 AM gov.civiljoin.util.PerformanceMonitor startMonitoring
+INFO: Performance monitoring started
+May 30, 2025 10:02:19 AM gov.civiljoin.service.CacheService <init>
+INFO: CacheService initialized with periodic cleanup every 5 minutes
+May 30, 2025 10:02:19 AM gov.civiljoin.service.CacheService preloadCommonData
+INFO: Preloading common cache data...
+May 30, 2025 10:02:19 AM gov.civiljoin.util.PerformanceMonitor collectSystemMetrics
+INFO: GC occurred: 1 collections, 6ms total time
+May 30, 2025 10:02:20 AM gov.civiljoin.util.DatabaseMigrationUtil initializeEnhancedDatabase
+INFO: Initializing database with enhanced schema...
+May 30, 2025 10:02:20 AM gov.civiljoin.util.DatabaseUtil getConnection
+INFO: Database connection obtained from pool
+May 30, 2025 10:02:20 AM gov.civiljoin.util.DatabaseMigrationUtil hasEnhancedSchema
+INFO: Enhanced schema detected: password_hash column exists
+May 30, 2025 10:02:20 AM gov.civiljoin.util.DatabaseMigrationUtil initializeEnhancedDatabase
+INFO: Enhanced schema migration needed: false
+May 30, 2025 10:02:20 AM gov.civiljoin.util.DatabaseMigrationUtil initializeEnhancedDatabase
+INFO: Enhanced schema detected, validating...
+May 30, 2025 10:02:20 AM gov.civiljoin.util.DatabaseUtil getConnection
+INFO: Database connection obtained from pool
+May 30, 2025 10:02:20 AM gov.civiljoin.util.DatabaseMigrationUtil validateEnhancedSchema
+WARNING: Enhanced users table structure not found
+May 30, 2025 10:02:20 AM gov.civiljoin.util.DatabaseMigrationUtil initializeEnhancedDatabase
+INFO: Enhanced schema validation result: false
+May 30, 2025 10:02:20 AM gov.civiljoin.CivilJoinApplication initializeDatabase
+WARNING: Enhanced database initialization failed, trying fallback...
+May 30, 2025 10:02:20 AM gov.civiljoin.CivilJoinApplication initializeDatabaseFallback
+INFO: Starting fallback database initialization...
+May 30, 2025 10:02:20 AM gov.civiljoin.util.DatabaseUtil getConnection
+INFO: Database connection obtained from pool
+May 30, 2025 10:02:20 AM gov.civiljoin.CivilJoinApplication initializeDatabaseFallback
+WARNING: Error executing complete schema: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'USE civiljoin;
+
+-- Users table with performance optimizations
+CREATE TABLE IF...' at line 10
+May 30, 2025 10:02:20 AM gov.civiljoin.CivilJoinApplication initializeDatabaseFallback
+INFO: Fallback schema execution completed: 3 successful, 0 errors
+May 30, 2025 10:02:20 AM gov.civiljoin.util.DatabaseUtil getConnection
+INFO: Database connection obtained from pool
+May 30, 2025 10:02:20 AM gov.civiljoin.service.CommentService initializeCommentTable
+INFO: Comments table initialized successfully
+May 30, 2025 10:02:20 AM gov.civiljoin.util.DatabaseUtil closeConnection
+INFO: Database connection returned to pool
+May 30, 2025 10:02:20 AM gov.civiljoin.CivilJoinApplication initializeDatabaseFallback
+INFO: Fallback database initialization completed successfully
+May 30, 2025 10:02:20 AM gov.civiljoin.util.DatabaseUtil closeConnection
+INFO: Database connection returned to pool
+May 30, 2025 10:02:21 AM gov.civiljoin.CivilJoinApplication showLoginScreen
+INFO: Loading login view from: file:/home/dan/IdeaProjects/VibeCoded/target/classes/gov/civiljoin/view/login.fxml
+Loading login view from: file:/home/dan/IdeaProjects/VibeCoded/target/classes/gov/civiljoin/view/login.fxml
+May 30, 2025 10:02:21 AM gov.civiljoin.service.AsyncTaskService <init>
+INFO: AsyncTaskService initialized with 4 cores available
+May 30, 2025 10:02:21 AM gov.civiljoin.util.DatabaseUtil getConnection
+INFO: Database connection obtained from pool
+May 30, 2025 10:02:21 AM gov.civiljoin.util.DatabaseUtil closeConnection
+INFO: Database connection returned to pool
+May 30, 2025 10:02:21 AM gov.civiljoin.service.AuthService initializeDatabase
+INFO: Successfully connected to database
+May 30, 2025 10:02:21 AM gov.civiljoin.CivilJoinApplication showLoginScreen
+WARNING: CSS file not found at: gov/civiljoin/css/styles.css
+May 30, 2025 10:02:21 AM gov.civiljoin.CivilJoinApplication showLoginScreen
+INFO: Found CSS at alternative path: file:/home/dan/IdeaProjects/VibeCoded/target/classes/gov/civiljoin/css/styles.css
+Dashboard view found at: file:/home/dan/IdeaProjects/VibeCoded/target/classes/gov/civiljoin/view/dashboard.fxml
+May 30, 2025 10:02:23 AM gov.civiljoin.util.PerformanceMonitor lambda$calculateUIPerformance$5
+WARNING: UI thread blocked for 565ms
+May 30, 2025 10:02:23 AM gov.civiljoin.util.PerformanceMonitor lambda$calculateUIPerformance$5
+WARNING: UI thread blocked for 177ms
+May 30, 2025 10:02:24 AM gov.civiljoin.util.PerformanceMonitor collectSystemMetrics
+INFO: GC occurred: 5 collections, 51ms total time
+May 30, 2025 10:02:24 AM gov.civiljoin.util.PerformanceMonitor lambda$calculateUIPerformance$5
+WARNING: UI thread blocked for 326ms

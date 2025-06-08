@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" 
+            prefHeight="600.0" prefWidth="800.0" 
+            styleClass="container"
+            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="gov.civiljoin.controller.DashboardController">
+   <top>
+      <HBox alignment="CENTER_LEFT" spacing="10.0" styleClass="header" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="CivilJoin" styleClass="label">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="userLabel" text="Welcome, User" styleClass="label" />
+                  <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#handleLogout" 
+                        styleClass="button" text="Logout">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <BorderPane BorderPane.alignment="CENTER" styleClass="container">
+         <center>
+            <!-- Stack Pane to overlay loading indicator -->
+            <StackPane>
+               <ScrollPane fitToHeight="true" fitToWidth="true" pannable="true" 
+                         styleClass="dashboard-scroll">
+                  <content>
+                     <TilePane fx:id="postTilePane" hgap="15.0" prefColumns="2" vgap="15.0" 
+                            styleClass="dashboard-content">
+                        <padding>
+                           <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                        </padding>
+                     </TilePane>
+                  </content>
+               </ScrollPane>
+               <!-- Loading indicator overlay -->
+               <ProgressIndicator fx:id="loadingIndicator" visible="false" 
+                                maxHeight="50.0" maxWidth="50.0" 
+                                styleClass="loading-indicator" />
+            </StackPane>
+         </center>
+         <top>
+            <HBox alignment="CENTER_LEFT" spacing="10.0" BorderPane.alignment="CENTER"
+                  styleClass="container">
+               <padding>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </padding>
+               <children>
+                  <Label text="Dashboard" styleClass="label, h3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_RIGHT" spacing="10.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Button fx:id="createPostButton" mnemonicParsing="false" onAction="#handleCreatePost" 
+                              styleClass="button, primary" text="Create Post" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </center>
+   <left>
+      <VBox prefWidth="200.0" spacing="0.0" styleClass="sidebar" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="dashboardButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleDashboard" 
+                   styleClass="sidebar-button, active" text="Dashboard">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="timelineButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleTimeline" 
+                   styleClass="sidebar-button" text="Timeline">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="feedbackButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleFeedback" 
+                   styleClass="sidebar-button" text="Feedback">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="settingsButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleSettings" 
+                   styleClass="sidebar-button" text="Settings">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="adminButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleAdmin" 
+                   styleClass="sidebar-button" text="Admin Panel" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <bottom>
+      <HBox alignment="CENTER" styleClass="footer" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="© 2025 CivilJoin - Secure Government Portal" styleClass="label, tertiary" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane> 

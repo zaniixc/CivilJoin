@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox fx:id="contentContainer" spacing="20" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="gov.civiljoin.controller.FeedbackController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <children>
+        <Label fx:id="titleLabel" text="Submit Feedback" style="-fx-font-size: 22px; -fx-font-weight: bold;"/>
+        
+        <Label text="Please share your thoughts, suggestions, or report issues:"/>
+        
+        <TextArea fx:id="feedbackTextArea" prefHeight="200" promptText="Enter your feedback here..." wrapText="true"/>
+        
+        <HBox alignment="CENTER_RIGHT">
+            <Button fx:id="submitButton" text="Submit Feedback" onAction="#handleSubmit"/>
+        </HBox>
+    </children>
+</VBox> 

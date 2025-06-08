@@ -1,0 +1,197 @@
+/*
+ * LIGHT THEME - CivilJoin 2024
+ * PRD NOTE: While this is called "light theme", PRD specifies dark mode as default
+ * This provides an alternative dark styling for users who prefer it
+ * Maintains the same professional dark appearance with slight variations
+ */
+
+.root {
+    -fx-base: #242424;
+    -fx-background: #1a1a1a;
+    -fx-control-inner-background: #2d2d2d;
+    -fx-control-inner-background-alt: #3d3d3d;
+    
+    /* Text Colors - maintaining dark theme readability */
+    -fx-text-background-color: #ffffff;
+    -fx-text-inner-color: #ffffff;
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #cccccc;
+    
+    /* Accent Colors - slightly different from dark theme */
+    -fx-accent: #6bb3ff;
+    -fx-focus-color: #6bb3ff;
+    -fx-selection-bar: #6bb3ff;
+    
+    /* Border Colors */
+    -fx-outer-border: #404040;
+    -fx-inner-border: #3d3d3d;
+    -fx-body-color: #2d2d2d;
+    -fx-hover-base: #404040;
+}
+
+/* Scene Background */
+.scene {
+    -fx-background-color: #1a1a1a;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #404040;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-font-weight: 500;
+}
+
+.button:hover {
+    -fx-background-color: #404040;
+    -fx-border-color: #6bb3ff;
+}
+
+.button:pressed {
+    -fx-background-color: #505050;
+}
+
+.button:focused {
+    -fx-border-color: #6bb3ff;
+    -fx-border-width: 2px;
+}
+
+/* Primary Button */
+.button.primary {
+    -fx-background-color: #6bb3ff;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #6bb3ff;
+}
+
+.button.primary:hover {
+    -fx-background-color: #85c5ff;
+}
+
+/* Text Fields */
+.text-field, .password-field, .text-area {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #cccccc;
+    -fx-border-color: #404040;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 12px;
+}
+
+.text-field:focused, .password-field:focused, .text-area:focused {
+    -fx-border-color: #6bb3ff;
+    -fx-border-width: 2px;
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: #ffffff;
+}
+
+.label.secondary {
+    -fx-text-fill: #e0e0e0;
+}
+
+.label.muted {
+    -fx-text-fill: #cccccc;
+}
+
+/* TableView */
+.table-view {
+    -fx-background-color: #1a1a1a;
+    -fx-border-color: #404040;
+    -fx-table-cell-border-color: #404040;
+}
+
+.table-view .column-header {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #404040;
+}
+
+.table-row-cell {
+    -fx-background-color: #1a1a1a;
+    -fx-text-fill: #ffffff;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #242424;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #6bb3ff;
+    -fx-text-fill: #ffffff;
+}
+
+/* ListView */
+.list-view {
+    -fx-background-color: #1a1a1a;
+    -fx-border-color: #404040;
+}
+
+.list-cell {
+    -fx-background-color: #1a1a1a;
+    -fx-text-fill: #ffffff;
+}
+
+.list-cell:selected {
+    -fx-background-color: #6bb3ff;
+}
+
+/* MenuBar */
+.menu-bar {
+    -fx-background-color: #2d2d2d;
+    -fx-border-color: #404040;
+}
+
+.menu {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+}
+
+.menu:hover {
+    -fx-background-color: #404040;
+}
+
+.menu-item {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;
+}
+
+.menu-item:hover {
+    -fx-background-color: #6bb3ff;
+}
+
+/* ScrollBar */
+.scroll-bar {
+    -fx-background-color: #2d2d2d;
+}
+
+.scroll-bar .track {
+    -fx-background-color: #2d2d2d;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #404040;
+    -fx-background-radius: 6px;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #6bb3ff;
+}
+
+/* Focus Indicators */
+.button:focused,
+.text-field:focused,
+.text-area:focused,
+.combo-box:focused,
+.list-view:focused,
+.table-view:focused {
+    -fx-effect: dropshadow(gaussian, #6bb3ff, 3, 0.3, 0, 0);
+} 

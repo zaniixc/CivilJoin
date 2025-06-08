@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="gov.civiljoin.controller.SettingsController">
+    <!-- Main content -->
+    <VBox fx:id="settingsContainer" styleClass="settings-container" spacing="24">
+        <padding>
+            <Insets top="24" right="24" bottom="24" left="24"/>
+        </padding>
+        <children>
+            <Label fx:id="titleLabel" text="Account Settings" styleClass="settings-section"/>
+            
+            <!-- Profile section -->
+            <VBox styleClass="settings-section" spacing="20">
+                <Label fx:id="profileLabel" text="Profile Information"/>
+                <VBox styleClass="settings-form" spacing="18">
+                    <GridPane fx:id="profileGrid" vgap="15" hgap="15">
+                        <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                        <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                        <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                        <TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                        <Button fx:id="updateProfileButton" text="Update Profile" onAction="#handleUpdateProfile" 
+                                GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                    </GridPane>
+                </VBox>
+            </VBox>
+            
+            <!-- Password section -->
+            <VBox styleClass="settings-section" spacing="20">
+                <Label fx:id="passwordLabel" text="Change Password"/>
+                <VBox styleClass="settings-form" spacing="18">
+                    <GridPane fx:id="passwordGrid" vgap="15" hgap="15">
+                        <Label text="Current Password:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                        <PasswordField fx:id="currentPasswordField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                        <Label text="New Password:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                        <PasswordField fx:id="newPasswordField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                        <Label text="Confirm Password:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                        <PasswordField fx:id="confirmPasswordField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                        <Button fx:id="changePasswordButton" text="Change Password" onAction="#handleChangePassword" 
+                                GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                    </GridPane>
+                </VBox>
+            </VBox>
+            
+            <!-- Settings Separator -->
+            <Region styleClass="settings-separator"/>
+            
+            <!-- Delete Account section - Only visible for regular users -->
+            <VBox fx:id="deleteAccountSection" styleClass="settings-section" spacing="20">
+                <Label fx:id="deleteAccountLabel" text="Delete Account" styleClass="danger-text"/>
+                <VBox styleClass="settings-form" spacing="15">
+                    <Label fx:id="deleteWarningLabel" text="Warning: This action cannot be undone. All your data will be permanently deleted." 
+                           styleClass="danger-text"/>
+                    <Button fx:id="deleteAccountButton" text="Delete Account" onAction="#handleDeleteAccount"
+                            styleClass="danger-button"/>
+                </VBox>
+            </VBox>
+        </children>
+    </VBox>
+    
+    <!-- Notification area - positioned on top with high z-index -->
+    <VBox fx:id="notificationArea" alignment="TOP_RIGHT" spacing="12" mouseTransparent="true" 
+          styleClass="notification-container">
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </padding>
+    </VBox>
+</StackPane> 

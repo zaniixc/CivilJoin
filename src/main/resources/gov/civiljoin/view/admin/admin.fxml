@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<ScrollPane fx:id="rootScrollPane" fitToWidth="true" styleClass="scroll-pane" 
+           xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" 
+           fx:controller="gov.civiljoin.controller.admin.AdminController">
+    <content>
+        <VBox fx:id="adminContainer" spacing="20" styleClass="admin-container">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+            <children>
+                <!-- Enhanced TabPane for security-focused admin interface -->
+                <TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE" styleClass="admin-tabpane">
+                    <tabs>
+                        <!-- Security Dashboard Tab -->
+                        <Tab fx:id="securityTab" text="🛡️ Security Dashboard" styleClass="security-tab">
+                            <content>
+                                <VBox spacing="15" styleClass="tab-content">
+                                    <padding>
+                                        <Insets top="15" right="15" bottom="15" left="15"/>
+                                    </padding>
+                                </VBox>
+                            </content>
+                        </Tab>
+                        
+                        <!-- User Management Tab -->
+                        <Tab fx:id="userTab" text="👥 User Management" styleClass="user-tab">
+                            <content>
+                                <VBox spacing="15" styleClass="tab-content">
+                                    <padding>
+                                        <Insets top="15" right="15" bottom="15" left="15"/>
+                                    </padding>
+                                </VBox>
+                            </content>
+                        </Tab>
+                        
+                        <!-- Key Management Tab -->
+                        <Tab fx:id="keyManagementTab" text="🔑 Key Management" styleClass="key-tab">
+                            <content>
+                                <VBox spacing="15" styleClass="tab-content">
+                                    <padding>
+                                        <Insets top="15" right="15" bottom="15" left="15"/>
+                                    </padding>
+                                </VBox>
+                            </content>
+                        </Tab>
+                        
+                        <!-- Activity Audit Tab -->
+                        <Tab fx:id="activityTab" text="📊 Security Audit" styleClass="audit-tab">
+                            <content>
+                                <VBox spacing="15" styleClass="tab-content">
+                                    <padding>
+                                        <Insets top="15" right="15" bottom="15" left="15"/>
+                                    </padding>
+                                </VBox>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+            </children>
+        </VBox>
+    </content>
+</ScrollPane> 

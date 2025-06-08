@@ -1,0 +1,338 @@
+/* Common CSS that applies regardless of theme - Enhanced for Better Text Visibility */
+
+/* Base fonts and sizing with optimal text visibility */
+.root {
+    -fx-font-family: "Inter", "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+    -fx-font-smoothing-type: lcd;
+}
+
+/* Global text color enforcement for maximum visibility */
+* {
+    -fx-text-fill: #ffffff;
+}
+
+/* Comprehensive label styling */
+.label {
+    -fx-text-fill: #ffffff !important;
+    -fx-font-smoothing-type: lcd;
+}
+
+/* Text elements */
+.text {
+    -fx-fill: #ffffff !important;
+    -fx-font-smoothing-type: lcd;
+}
+
+/* Labeled controls */
+.labeled {
+    -fx-text-fill: #ffffff !important;
+}
+
+/* Button defaults with enhanced visibility */
+.button {
+    -fx-cursor: hand;
+    -fx-text-fill: #ffffff !important;
+    -fx-font-weight: 500;
+}
+
+/* Input field text visibility */
+.text-field, .text-area, .password-field {
+    -fx-text-fill: #ffffff !important;
+}
+
+/* ComboBox text visibility */
+.combo-box {
+    -fx-text-fill: #ffffff !important;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #ffffff !important;
+}
+
+/* Choice box text */
+.choice-box {
+    -fx-text-fill: #ffffff !important;
+}
+
+.choice-box .list-cell {
+    -fx-text-fill: #ffffff !important;
+}
+
+/* Table text visibility */
+.table-view .table-cell {
+    -fx-text-fill: #ffffff !important;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #ffffff !important;
+}
+
+/* List view text */
+.list-view .list-cell {
+    -fx-text-fill: #ffffff !important;
+}
+
+/* Tree view text */
+.tree-view .tree-cell {
+    -fx-text-fill: #ffffff !important;
+}
+
+/* Tab text */
+.tab .tab-label {
+    -fx-text-fill: #ffffff !important;
+}
+
+/* Menu text */
+.menu .label {
+    -fx-text-fill: #ffffff !important;
+}
+
+.menu-item .label {
+    -fx-text-fill: #ffffff !important;
+}
+
+/* Checkbox and radio button text */
+.check-box .text {
+    -fx-fill: #ffffff !important;
+}
+
+.radio-button .text {
+    -fx-fill: #ffffff !important;
+}
+
+/* Spinner text */
+.spinner .text-field {
+    -fx-text-fill: #ffffff !important;
+}
+
+/* Date picker text */
+.date-picker .text-field {
+    -fx-text-fill: #ffffff !important;
+}
+
+/* Progress bar text (if any) */
+.progress-bar .text {
+    -fx-fill: #ffffff !important;
+}
+
+/* Slider text (if any) */
+.slider .text {
+    -fx-fill: #ffffff !important;
+}
+
+/* Post styling with enhanced visibility */
+.post-title {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-fill: #ffffff !important;
+}
+
+.post-author {
+    -fx-font-size: 12px;
+    -fx-font-style: italic;
+    -fx-text-fill: #b0b0b0 !important;
+}
+
+.post-content {
+    -fx-font-size: 14px;
+    -fx-wrap-text: true;
+    -fx-text-fill: #e0e0e0 !important;
+}
+
+.post-date {
+    -fx-font-size: 12px;
+    -fx-text-fill: #b0b0b0 !important;
+}
+
+/* Comment styling with enhanced visibility */
+.comment-container {
+    -fx-padding: 10 0 10 0;
+}
+
+.comment-author {
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-text-fill: #ffffff !important;
+}
+
+.comment-date {
+    -fx-font-size: 11px;
+    -fx-text-fill: #b0b0b0 !important;
+}
+
+.comment-text {
+    -fx-wrap-text: true;
+    -fx-text-fill: #e0e0e0 !important;
+}
+
+/* Form layout */
+.form-grid {
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+}
+
+/* Admin panel stats with enhanced visibility */
+.stat-card {
+    -fx-padding: 15;
+    -fx-pref-width: 200;
+}
+
+.stat-value {
+    -fx-font-weight: bold;
+    -fx-font-size: 28px;
+    -fx-text-fill: #ffffff !important;
+}
+
+.stat-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #e0e0e0 !important;
+}
+
+/* Utility classes */
+.padding-10 {
+    -fx-padding: 10;
+}
+
+.padding-15 {
+    -fx-padding: 15;
+}
+
+.padding-20 {
+    -fx-padding: 20;
+}
+
+.margin-10 {
+    -fx-margin: 10;
+}
+
+.margin-top-10 {
+    -fx-margin-top: 10;
+}
+
+.spacing-10 {
+    -fx-spacing: 10;
+}
+
+.spacing-15 {
+    -fx-spacing: 15;
+}
+
+.spacing-20 {
+    -fx-spacing: 20;
+}
+
+/* Alignment helpers */
+.center-content {
+    -fx-alignment: CENTER;
+}
+
+.center-left {
+    -fx-alignment: CENTER-LEFT;
+}
+
+.center-right {
+    -fx-alignment: CENTER-RIGHT;
+}
+
+/* Width constraints */
+.max-width-600 {
+    -fx-max-width: 600;
+}
+
+.max-width-800 {
+    -fx-max-width: 800;
+}
+
+.max-width-1000 {
+    -fx-max-width: 1000;
+}
+
+/* Text color utility classes */
+.text-white {
+    -fx-text-fill: #ffffff !important;
+}
+
+.text-light {
+    -fx-text-fill: #e0e0e0 !important;
+}
+
+.text-muted {
+    -fx-text-fill: #b0b0b0 !important;
+}
+
+.text-success {
+    -fx-text-fill: #00ff88 !important;
+}
+
+.text-warning {
+    -fx-text-fill: #ffaa00 !important;
+}
+
+.text-danger {
+    -fx-text-fill: #ff4444 !important;
+}
+
+.text-info {
+    -fx-text-fill: #64b5f6 !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        -fx-opacity: 0;
+    }
+    100% {
+        -fx-opacity: 1;
+    }
+}
+
+.fade-in {
+    -fx-opacity: 0;
+    -fx-animation: fadeIn 0.3s ease-in forwards;
+}
+
+/* Tooltips with enhanced visibility */
+.tooltip {
+    -fx-font-size: 12px;
+    -fx-padding: 8px 12px;
+    -fx-background-radius: 4px;
+    -fx-text-fill: #ffffff !important;
+    -fx-background-color: #2d2d2d;
+    -fx-border-color: #555555;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 4, 0, 0, 2);
+}
+
+/* High contrast accessibility mode */
+.high-contrast * {
+    -fx-text-fill: #ffffff !important;
+    -fx-font-weight: bold;
+}
+
+/* Focus indicators for accessibility */
+.text-field:focused,
+.text-area:focused,
+.password-field:focused,
+.combo-box:focused,
+.button:focused {
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 4, 0, 0, 0);
+}
+
+/* Selection styling */
+.text-field:selected,
+.text-area:selected {
+    -fx-highlight-fill: rgba(255, 255, 255, 0.3);
+    -fx-highlight-text-fill: #000000;
+}
+
+/* Disabled state with visible text */
+.text-field:disabled,
+.text-area:disabled,
+.password-field:disabled,
+.button:disabled,
+.label:disabled {
+    -fx-text-fill: #888888 !important;
+    -fx-opacity: 0.6;
+} 

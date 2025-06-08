@@ -1,0 +1,294 @@
+/*
+ * CUSTOM CONTROLS STYLING - CivilJoin 2024
+ * Enhanced styling for custom components and specialized UI elements
+ * PRD REQUIREMENT: Custom control styles for enhanced UX
+ */
+
+/* Notification System - Optimized for Performance */
+.notification-container {
+    -fx-background-color: transparent;
+    -fx-padding: 15px;
+    -fx-spacing: 8px;
+    -fx-alignment: TOP_RIGHT;
+}
+
+.notification {
+    -fx-background-color: #1a1a1a;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1px;
+    -fx-padding: 12px 16px;
+    -fx-max-width: 320px;
+    -fx-border-color: #333333;
+    -fx-cache: true;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0, 0, 2);
+}
+
+.notification.success {
+    -fx-border-color: #28a745;
+}
+
+.notification.error {
+    -fx-border-color: #dc3545;
+}
+
+.notification.warning {
+    -fx-border-color: #ffc107;
+}
+
+.notification.info {
+    -fx-border-color: #4a9eff;
+}
+
+.notification.confirmation {
+    -fx-border-color: #ffc107;
+    -fx-padding: 16px 20px;
+    -fx-max-width: 350px;
+}
+
+/* Post Cards */
+.post-card {
+    -fx-background-color: #2d2d2d;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-color: #3d3d3d;
+    -fx-border-width: 1px;
+    -fx-padding: 16px;
+    -fx-spacing: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 2, 0, 0, 1);
+}
+
+.post-card:hover {
+    -fx-border-color: #4a9eff;
+    -fx-effect: dropshadow(gaussian, rgba(74,158,255,0.3), 4, 0, 0, 2);
+}
+
+.post-card .title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.post-card .metadata {
+    -fx-text-fill: #b0b0b0;
+    -fx-font-size: 12px;
+}
+
+.post-card .content {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 14px;
+    -fx-wrap-text: true;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    -fx-background-color: #1e1e1e;
+    -fx-border-color: #3d3d3d;
+    -fx-border-width: 0 1px 0 0;
+    -fx-padding: 20px 0;
+}
+
+.sidebar-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #b0b0b0;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-padding: 12px 20px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;
+}
+
+.sidebar-button.active {
+    -fx-background-color: #4a9eff;
+    -fx-text-fill: #ffffff;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #3d3d3d;
+    -fx-border-width: 1px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 8px 16px;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.theme-toggle:hover {
+    -fx-background-color: #3d3d3d;
+    -fx-border-color: #4a9eff;
+}
+
+/* Settings Forms */
+.settings-container {
+    -fx-background-color: #1e1e1e;
+    -fx-padding: 20px;
+    -fx-spacing: 20px;
+}
+
+.settings-section {
+    -fx-background-color: #2d2d2d;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-color: #3d3d3d;
+    -fx-border-width: 1px;
+    -fx-padding: 20px;
+    -fx-spacing: 15px;
+}
+
+.settings-section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.settings-form {
+    -fx-spacing: 12px;
+}
+
+.settings-label {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+}
+
+/* Admin Panel */
+.admin-container {
+    -fx-background-color: #1e1e1e;
+    -fx-padding: 20px;
+}
+
+.admin-card {
+    -fx-background-color: #2d2d2d;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-border-color: #3d3d3d;
+    -fx-border-width: 1px;
+    -fx-padding: 20px;
+    -fx-spacing: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 2, 0, 0, 1);
+}
+
+.admin-card.security {
+    -fx-border-color: #dc3545;
+}
+
+.admin-card.users {
+    -fx-border-color: #4a9eff;
+}
+
+.admin-card.system {
+    -fx-border-color: #28a745;
+}
+
+/* Activity Timeline */
+.timeline-container {
+    -fx-background-color: #1e1e1e;
+    -fx-padding: 20px;
+}
+
+.activity-card {
+    -fx-background-color: #2d2d2d;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-border-color: #3d3d3d;
+    -fx-border-width: 1px;
+    -fx-padding: 12px;
+    -fx-spacing: 8px;
+    -fx-margin: 0 0 8px 0;
+}
+
+.activity-card.high-priority {
+    -fx-border-color: #dc3545;
+}
+
+.activity-card.medium-priority {
+    -fx-border-color: #ffc107;
+}
+
+.activity-card.low-priority {
+    -fx-border-color: #28a745;
+}
+
+/* Loading States */
+.loading-indicator {
+    -fx-text-fill: #4a9eff;
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+}
+
+.loading-spinner {
+    -fx-progress-color: #4a9eff;
+}
+
+/* Error States */
+.error-text {
+    -fx-text-fill: #dc3545;
+    -fx-font-size: 14px;
+}
+
+.error-container {
+    -fx-background-color: rgba(220, 53, 69, 0.1);
+    -fx-border-color: #dc3545;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 12px;
+}
+
+/* Success States */
+.success-text {
+    -fx-text-fill: #28a745;
+    -fx-font-size: 14px;
+}
+
+.success-container {
+    -fx-background-color: rgba(40, 167, 69, 0.1);
+    -fx-border-color: #28a745;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 12px;
+}
+
+/* Responsive Layout Helpers */
+.mobile-layout {
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+}
+
+.tablet-layout {
+    -fx-padding: 15px;
+    -fx-spacing: 15px;
+}
+
+.desktop-layout {
+    -fx-padding: 20px;
+    -fx-spacing: 20px;
+}
+
+/* Animation Support */
+.fade-in {
+    -fx-opacity: 0;
+}
+
+.fade-out {
+    -fx-opacity: 1;
+}
+
+/* High Performance Mode */
+.performance-mode .post-card,
+.performance-mode .admin-card,
+.performance-mode .settings-section {
+    -fx-effect: null; /* Remove drop shadows for better performance */
+} 

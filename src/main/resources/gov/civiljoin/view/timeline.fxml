@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="contentContainer" styleClass="timeline-container" spacing="20" 
+      xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" 
+      fx:controller="gov.civiljoin.controller.TimelineController">
+    
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    
+    <!-- Enhanced Filter and Control Panel -->
+    <HBox fx:id="filterContainer" styleClass="filter-container" spacing="15" alignment="CENTER_LEFT">
+        <padding>
+            <Insets top="15" right="20" bottom="15" left="20"/>
+        </padding>
+        
+        <!-- Search Field -->
+        <TextField fx:id="searchField" promptText="🔍 Search activities..." prefWidth="250" 
+                   styleClass="search-field"/>
+        
+        <!-- Activity Type Filter -->
+        <VBox spacing="5">
+            <Label text="Type:" styleClass="filter-label"/>
+            <ComboBox fx:id="typeFilter" prefWidth="150" styleClass="filter-combo"/>
+        </VBox>
+        
+        <!-- Severity Filter -->
+        <VBox spacing="5">
+            <Label text="Severity:" styleClass="filter-label"/>
+            <ComboBox fx:id="severityFilter" prefWidth="150" styleClass="filter-combo"/>
+        </VBox>
+        
+        <!-- Spacer -->
+        <Region HBox.hgrow="ALWAYS"/>
+        
+        <!-- Control Buttons -->
+        <HBox spacing="10" alignment="CENTER_RIGHT">
+            <ToggleButton fx:id="autoRefreshToggle" text="🟢 Live" styleClass="refresh-toggle"/>
+            <Button fx:id="refreshButton" text="🔄 Refresh" styleClass="refresh-button"/>
+        </HBox>
+    </HBox>
+    
+    <!-- Status Bar -->
+    <HBox styleClass="status-bar" spacing="10" alignment="CENTER_LEFT">
+        <padding>
+            <Insets top="8" right="15" bottom="8" left="15"/>
+        </padding>
+        
+        <Label fx:id="statusLabel" text="Loading activities..." styleClass="status-text"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Label text="📡 Real-time Activity Stream" styleClass="status-title"/>
+    </HBox>
+    
+    <!-- Main Activities Container -->
+    <ScrollPane fx:id="activitiesScrollPane" styleClass="activities-scroll" 
+                fitToWidth="true" fitToHeight="false" vbarPolicy="AS_NEEDED" hbarPolicy="NEVER">
+        
+        <VBox fx:id="activitiesContainer" styleClass="activities-container" spacing="12">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            
+            <!-- Activities will be populated dynamically -->
+            <Label text="Loading timeline activities..." styleClass="loading-text"/>
+        </VBox>
+    </ScrollPane>
+</VBox> 
