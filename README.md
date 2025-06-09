@@ -99,14 +99,6 @@ CivilJoin is a JavaFX-based government forum application that provides a unified
 
 ## 👥 Test Accounts Ready
 
-### 👑 Owner Account (Full Access)
-```
-Username: testadmin
-Password: admin123
-Role: OWNER
-Features: Complete system administration
-```
-
 ### 👤 Test User Account
 ```
 Username: testuser  
